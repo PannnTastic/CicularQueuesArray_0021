@@ -1,5 +1,8 @@
 #include<iostream>
 using namespace std;
 
-class{};
+class{
+    int front, rear, max =5;
+    int queue[5];
+};
 
