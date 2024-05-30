@@ -82,6 +82,17 @@ class{
                 }
                 cout << endl;
             }
+            else{
+                // jika front_postition > rear_position,iterasi dri front hingga akhir array
+                while (front_position <= max-1)
+                {
+                    cout << queue_array[front_position] << "  ";
+                    front_position ++;
+                }
+
+                front_position = 0;
+                
+            }
         }
 
 };
