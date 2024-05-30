@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class{
+class queues{
     int front, rear, max =5;
     int queue_array[5];
 
@@ -102,4 +102,45 @@ class{
         }
 
 };
+
+int main(){
+    queues q;
+    int ch;
+
+    while (true){
+        try{
+            cout << "Menu" << endl;
+            cout << "1.Implement Insertv Operation" << endl;
+            cout << "2.Implement Delete Operation" << endl;
+            cout << "4.Exit" << endl;
+            cout << "Masukkan Pilihan : ";
+            cin >> ch;
+
+            switch (ch)
+            {
+            case 1 : {
+                q.insert();
+                break;
+            }
+            case 2 : {
+                q.remove();
+                break;
+            }
+            case 3 : {
+                q.display();
+                break;
+            }case 4 : {
+                return 0;
+            }
+            default:{
+                cout << "Pilihan tidak tersedia!" << endl;
+                break;
+            }    
+            }
+        }
+        catch (exception& e){
+            cout << "Chck for the values entered." << endl;
+        }
+    }
+}
 
