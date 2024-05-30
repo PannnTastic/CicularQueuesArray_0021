@@ -64,7 +64,7 @@ class{
 
         void display(){
             int front_position = front;
-            int rear_positon = rear;
+            int rear_position = rear;
 
             //cek apakah antrian kosong
             if (front == -1){
@@ -72,7 +72,16 @@ class{
                 return;
             }
 
-            
+            cout << "\n elements in the queue are...\n";
+
+            //jika front_positon <= rear_positon, iterasi dri front hingga rear
+            if (front_position <= rear_position){
+                while(front_position <= rear_position){
+                    cout << queue_array[front_position] << "  ";
+                    front_position++;
+                }
+                cout << endl;
+            }
         }
 
 };
