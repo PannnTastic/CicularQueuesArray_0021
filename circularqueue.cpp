@@ -45,6 +45,15 @@ class{
                 return;
             }
             cout << "Element deleted from the queue : " << queue_array[front] << endl;
+
+            //cek jika hanya meiliki 1 elemen
+            if (front == rear) {
+                front = -1;
+                rear = -1;
+            }
+            else{
+                
+            }
         }
 
 };
