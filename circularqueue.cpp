@@ -37,6 +37,10 @@ class{
             }
             queue_array[rear] = num;
         }
-        
+
+        void remove (){
+            
+        }
+
 };
 
