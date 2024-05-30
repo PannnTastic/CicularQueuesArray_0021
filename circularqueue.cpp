@@ -39,7 +39,12 @@ class{
         }
 
         void remove (){
-            
+            //cek apakah kosong
+            if (front == -1){
+                cout << "queue uderflow\n";
+                return;
+            }
+            cout << "Element deleted from the queue : " << queue_array[front] << endl;
         }
 
 };
