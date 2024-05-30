@@ -29,8 +29,14 @@ class{
                 front == 0;
             }
             else{
-                
+                //jika rear berada di posisi terakhir array,kembal ke awal array
+                if(rear == max-1)
+                    rear==0;
+                else
+                    rear == rear+1;
             }
+            queue_array[rear] = num;
         }
+        
 };
 
