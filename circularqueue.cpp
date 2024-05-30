@@ -21,6 +21,15 @@ class{
 
             if((front == 0 && rear == max-1) || (front == rear +1)){
                 cout << "\n Queue Overflow\n";
+                return;
+            }
+            //cek apakah antrian kosong
+            if(front == -1){
+                rear == 0;
+                front == 0;
+            }
+            else{
+                
             }
         }
 };
